@@ -1,6 +1,13 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
+  <a href="/game">-> Spiele</a>
+
   <h1>{{title}}</h1>
-  <p>Welcome to {{title}}</p>
+  <p>Welcome to {{name}}</p>
+
+  <form method="get" action="/setname">
+    <input type="text" name="value" placeholder="Name"/>
+    <input type="submit" value="Go"/>
+  </form>
 {% endblock %}
