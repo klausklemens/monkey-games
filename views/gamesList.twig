@@ -1,0 +1,8 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    {% if errorMsg is defined %}
+        <span style="background-color:red">{{ errorMsg }}<br/>:(</span>
+    {% endif %}
+    <h1>lustigg</h1>
+{% endblock %}
